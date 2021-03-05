@@ -16,3 +16,5 @@ jobs:
             - run: npm install -g yarn
             - run: yarn install
             - run: yarn run test
+              env:
+                  MEINE_UMGEBUNGS_VARIABLE: ${{ secrets.MEINE_UMGEBUNGS_VARIABLE }}
